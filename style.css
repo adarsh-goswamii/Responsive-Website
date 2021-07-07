@@ -1,0 +1,90 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: PopLight ;
+    src: url(./fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: PopRegular ;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: PopMedium ;
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+
+body {
+    font-family: PopLight;
+}
+
+.portfolio {
+    color: white;
+    background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+}
+
+nav {
+    /* 1. We will specify a height for the navigation
+       2. Then we are specifing that if the screen is 100% then the nav content will only occupy like 90% of it.
+       3. After that we are giving margin auto which will basically assign left and right margin to 5%.*/
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px, 0px;
+}
+
+.page {
+    min-height: 90vh;
+    display: grid;
+    /* This will divide the screen into 5% 30% 30% 30% 5% */
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.hero {
+    overflow: hidden;
+    height: 350px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+}
+
+.hero img {
+    height: 350px;
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+.model_right {
+    transform: translate(0%, 10%);
+}
+
+.model_left {
+    transform: translate(0%, -10%);
+}
+
+.hero:hover .model_right {
+    transform: translate(0%, 0%);
+}
+
+.hero:hover .model_left {
+    transform: translate(0%, 0%);
+}
+
+.details {
+    grid-column: 2/3;
+    align-self: end;
+}
+

@@ -14,7 +14,28 @@
         <header>
             <nav>
                 <h3 class="logo">Dimitri Marco</h3>
-                <img src="./img/hamburger.svg" alt="hamburger">
+                <svg class="menu"
+                width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="1.5" x2="43" y2="1.5" stroke="white" stroke-width="3"/>
+                    <line y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3"/>
+                    <line y1="21.5" x2="16" y2="21.5" stroke="white" stroke-width="3"/>
+                    </svg>
+                    
+                <div class="nav-open">
+                    <div class="contact">
+                        <h3>Contact</h3>
+                        <p>0552-567-7892</p>
+                    </div>
+
+                    <div class="social">
+                        <h3>Social</h3>
+                        <div class="social-links">
+                            <img src="./img/Facebook.svg" alt="facbook logo">
+                            <img src="./img/Instagram.svg" alt="instagram logo">
+                            <img src="./img/Twitter.svg" alt="twitter logo">
+                        </div>
+                    </div>
+                </div>
             </nav>
 
             <main>
@@ -25,8 +46,10 @@
                         <p>01/01/2000</p>
                     </div>
                     <div class="hero">
-                        <img class="model_left" src="./img/model-left.jpg" alt="model left">
-                        <img class="model_right" src="./img/model-right.jpg" alt="model right">
+                        <a href="./photo.html">
+                            <img class="model_left" src="./img/model-left.jpg" alt="model left">
+                            <img class="model_right" src="./img/model-right.jpg" alt="model right"> 
+                        </a>
                     </div>
                 </section>
 
@@ -37,39 +60,43 @@
                         <p>02/01/2000</p>
                     </div>
                     <div class="hero">
-                        <img class="model_left" src="./img/chef-left.jpg" alt="chef left">
-                        <img class="model_right" src="./img/chef-right.jpg" alt="chef right">
+                        <a href="./photo.html">
+                            <img class="model_left" src="./img/chef-left.jpg" alt="chef left">
+                            <img class="model_right" src="./img/chef-right.jpg" alt="chef right">
+                        </a>
                     </div>
                 </section>
 
-                <section class="page hsirstylist">
+                <section class="page hairstylist">
                     <div class="details">
                         <h1>John Mayer</h1>
                         <h2>Hair Stylist</h2>
                         <p>03/01/2000</p>
                     </div>
                     <div class="hero">
-                        <img class="model_left" src="./img/hair-left.jpg" alt="hairstylist left">
-                        <img class="model_right" src="./img/hair-right.jpg" alt="hairstylist right">
+                        <a href="./photo.html">
+                            <img class="model_left" src="./img/hair-left.jpg" alt="hairstylist left">
+                            <img class="model_right" src="./img/hair-right.jpg" alt="hairstylist right">
+                        </a>
                     </div>
                 </section>
 
                 <div class="pages">
-                    <div class="" page-1>
+                    <div class="page-1">
                         <h3>01</h3>
                         <svg class="slide active" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="6" cy="6" r="6" fill="white" />
                         </svg>
                     </div>
 
-                    <div class="" page-2>
+                    <div class="page-2">
                         <h3>02</h3>
                         <svg class="slide " width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="6" cy="6" r="6" fill="white" />
                         </svg>
                     </div>
 
-                    <div class="" page-3>
+                    <div class="page-3">
                         <h3>03</h3>
                         <svg class="slide " width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="6" cy="6" r="6" fill="white" />
@@ -80,6 +107,18 @@
             </main>
         </header>
     </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
+      crossorigin="anonymous"
+    ></script>
+    <script src= "script.js"></script>
 </body>
 
 </html>

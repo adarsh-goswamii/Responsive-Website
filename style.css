@@ -207,3 +207,64 @@ nav {
     width: 100%;
     height: 100%;
 }
+
+@media (max-width:768px) {
+    .page {
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 2fr 1fr;
+        align-items: center;
+    }
+
+    .hero {
+        grid-column: 2/3;
+        height: auto;
+    }
+
+    .hero img {
+        height: 350px;
+    }
+
+    .details {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        text-align: center;
+    }
+
+    .details h1 {
+        font-size: 30px;
+        font-family: PopRegular;
+    }
+    
+    .details h2 {
+        font-size: 22px;
+        padding: 20px 0px;
+    }
+    
+    .details p {
+        font-size: 14px;
+        padding: 20px 0px 50px 0px;
+    }
+
+    .story,  .my-work{
+        flex-direction: column;
+    }
+
+    .story_description, .work_description {
+        width: 90%;
+        margin: auto;
+    }
+
+
+    /* so we are defining a responsive grid which will act as per the space
+    available at that moment, by minmax we have given that 200px should be the 
+    smallest space it should not go beyond that. */
+    .work-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .profile {
+        padding-top: 30px;
+        text-align: center;
+    }
+}

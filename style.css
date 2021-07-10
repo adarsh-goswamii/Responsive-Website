@@ -19,9 +19,13 @@
     src: url(./fonts/Poppins-Medium.ttf);
 }
 
-body {
+#index-body {
     font-family: PopLight;
     overflow: hidden;
+}
+
+body {
+    font-family: PopLight;
 }
 
 .portfolio {
@@ -319,4 +323,8 @@ nav {
 
 .menu, .logo {
     z-index: 3;
+}
+
+.social-links a {
+    text-decoration: none;
 }
